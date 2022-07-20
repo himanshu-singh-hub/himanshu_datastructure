@@ -31,9 +31,7 @@ class Solution
                 if(arr[j]>arr[j+1])
                 {
                     swaped=true;
-                    int c=arr[j];
-                    arr[j]=arr[j+1];
-                    arr[j+1]=c;
+                    swap(&arr[j],&arr[j+1]);
                 }
             }
             if(swaped==false)
