@@ -1,3 +1,5 @@
+//here insertion,deletion,iteration all in one will get in doubly linked list
+
 #include<iostream>
 using namespace std;
 
