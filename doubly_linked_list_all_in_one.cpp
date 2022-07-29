@@ -41,14 +41,12 @@ void Print(Node* head){
 //give length
 int getLength(Node* head)
 {
-
     int len=0;
     Node* temp=head;
     while(temp!=NULL)
     {
         len++;
         temp=temp->next;
-
     }
     return len;
 }
@@ -66,7 +64,6 @@ void insertAtTail(Node* &tail ,int d)
     Node* temp=new Node(d);
     tail->next=temp;
     temp->prev=tail;
-
     tail=temp;
 }
 
@@ -124,7 +121,6 @@ void deleteNode(int position,Node* &head)
          prev->next=curr->next;
         curr->next=NULL;
         delete curr;
-        
 }
 
 int main()
@@ -141,17 +137,22 @@ int main()
 
      insertAtHead(head,8);
      Print(head);
+    
      insertAtHead(head,12);
      Print(head);
+    
     insertAtTail(tail,25);
     Print(head);
 
     insertAtPosition(tail,head,1,101);
     Print(head);
+    
     insertAtPosition(tail,head,2,102);
     Print(head);
+    
     insertAtPosition(tail,head,8,103);
     Print(head);
+    
     deleteNode(1,head);
      Print(head);
     
