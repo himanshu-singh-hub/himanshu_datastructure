@@ -47,35 +47,18 @@ int lastOcc(vector<int>& arr, int n, int key)
    }
    return ans;
 }
-
- 
-
- 
-
 pair<int, int> firstAndLastPosition(vector<int>& arr, int n, int k)
-
 {
-
    pair<int, int> p;
-
    p.first= firstOcc(arr, n,k);
-
    p.second= lastOcc(arr,n,k);
-
-   
-
    return p;
-
 }
 //alternative of this code is
-
 //{ Driver Code Starts
 #include<bits/stdc++.h>
 using namespace std;
-
 // } Driver Code Ends
-
-
 vector<int> find(int arr[], int n , int x )
 {
      int first_occ=-1;
@@ -94,13 +77,10 @@ vector<int> find(int arr[], int n , int x )
        }
 }
  v.push_back(first_occ);
-   v.push_back(last_occ);
-   
+   v.push_back(last_occ);   
    return v;
 }
-
 //{ Driver Code Starts.
-
 int main()
 {
     int t;
@@ -118,7 +98,4 @@ int main()
     }
     return 0;
 }
-
-
-
 // } Driver Code Ends
