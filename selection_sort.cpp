@@ -6,8 +6,6 @@ void swap(int *xp, int *yp)
     *xp = *yp;
     *yp = temp;
 }
-
-
 // } Driver Code Ends
 class Solution
 {
@@ -53,16 +51,11 @@ void printArray(int arr[], int size)
 int main()
 {
     int arr[1000],n,T,i;
-  
     scanf("%d",&T);
-    
     while(T--){
-        
     scanf("%d",&n);
-    
     for(i=0;i<n;i++)
-      scanf("%d",&arr[i]);
-      
+      scanf("%d",&arr[i]);      
     Solution ob;  
     ob.selectionSort(arr, n);
     printArray(arr, n);
