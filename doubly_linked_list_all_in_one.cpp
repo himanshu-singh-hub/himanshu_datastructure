@@ -8,14 +8,13 @@ class Node{
     int data;
     Node* prev;
     Node* next;
-
     //constructor
     Node(int d){
         this->data=d;
         this->prev=NULL;
         this->next=NULL;
     }
-    
+    //destructive
     ~Node()
     {
         int val=this->data;
@@ -50,7 +49,6 @@ int getLength(Node* head)
     }
     return len;
 }
-
 void insertAtHead(Node* &head ,int d)
 {
     Node* temp=new Node(d);
