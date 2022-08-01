@@ -3,7 +3,6 @@
 
 // C program for implementation of Bubble sort
 #include <stdio.h>
-
 // swapping the elements
 void swap(int *xp, int *yp)
 {
@@ -11,8 +10,6 @@ void swap(int *xp, int *yp)
     *xp = *yp;
     *yp = temp;
 }
-
-
 // } Driver Code Ends
 //User function Template for C++
 
@@ -41,8 +38,6 @@ class Solution
         }
     }
 };
-
-
 //{ Driver Code Starts.
 
 /* Function to print an array */
@@ -53,7 +48,6 @@ void printArray(int arr[], int size)
         printf("%d ", arr[i]);
     printf("\n");
 }
- 
 // Driver program to test above functions
 int main()
 {
