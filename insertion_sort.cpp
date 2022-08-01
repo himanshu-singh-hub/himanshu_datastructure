@@ -10,8 +10,6 @@ void printArray(int arr[], int size)
         printf("%d ", arr[i]);
     printf("\n");
 }
-
-
 // } Driver Code Ends
 class Solution
 {
@@ -33,10 +31,8 @@ class Solution
                 else{
                   break;  
                 }
-                 
             }
             arr[j+1]=temp;
-           
         }
     }
 };
