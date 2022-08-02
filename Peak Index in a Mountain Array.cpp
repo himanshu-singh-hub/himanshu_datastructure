@@ -9,7 +9,6 @@ public:
             if(arr[mid]<arr[mid+1])
             {
                 s=mid+1;
-                
             }
             else
             {
