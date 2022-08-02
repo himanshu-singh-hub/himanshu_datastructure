@@ -2,9 +2,6 @@
 #include <stdio.h>
 #include <bits/stdc++.h>
 using namespace std;
-
-
-
 /* Function to print an array */
 void printArray(int arr[], int size)
 {
@@ -13,8 +10,6 @@ void printArray(int arr[], int size)
         printf("%d ", arr[i]);
     printf("\n");
 }
-
-
 // } Driver Code Ends
 class Solution
 {
@@ -23,19 +18,15 @@ class Solution
     {
          // Your code here
          int mid=(s+e)/2;
-         
          int len1=mid-s+1;
          int len2=e-mid;
-         
          int *first= new int[len1];
          int *second=new int[len2];
-         
          //copy value
          int mainArrayindex=s;
          for(int i=0;i<len1;i++)
          {
              first[i]=arr[mainArrayindex++];
-             
          }
          mainArrayindex=mid+1;
          for(int i=0;i<len2;i++)
@@ -56,7 +47,6 @@ class Solution
                  arr[mainArrayindex++]=second[index2++];
              }
          }
-         
          while(index1<len1)
          {
              arr[mainArrayindex++]=first[index1++];
@@ -73,10 +63,8 @@ class Solution
         if(s>=e)
         {
             return ;
-            
         }
         int mid=(s+e)/2;
-        
         //left par sorting
         mergeSort(arr,s,mid);
         //right part sorting
