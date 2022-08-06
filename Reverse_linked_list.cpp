@@ -15,9 +15,6 @@ struct Node {
         next = NULL;
     }
 };
-
-
-
 // } Driver Code Ends
 /* Linked List Node structure:
 
@@ -43,9 +40,6 @@ class Solution
         Node* forward=curr->next;
         reverse(head,forward,curr); 
         curr->next=prev;
-        
-        
-        
     }
     
     
@@ -59,10 +53,6 @@ class Solution
         Node* prev=NULL;
         reverse(head,curr,prev);
         return head;
-        
-        
-        
-        
         
         /*if(head==NULL || head->next==NULL)
         {
