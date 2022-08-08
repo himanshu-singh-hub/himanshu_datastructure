@@ -23,7 +23,6 @@ struct Node
     int data;
     struct Node *next;
 }
-
 */
 
 class Solution
@@ -41,8 +40,6 @@ class Solution
         reverse(head,forward,curr); 
         curr->next=prev;
     }
-    
-    
     public:
     //Function to reverse a linked list.
     struct Node* reverseList(struct Node *head)
@@ -71,11 +68,7 @@ class Solution
         return prev;*/
     }
 };
-    
-
-
 //{ Driver Code Starts.
-
 void printList(struct Node *head)
 {
     struct Node *temp = head;
@@ -117,6 +110,4 @@ int main()
     }
     return 0;
 }
-
-
 // } Driver Code Ends
